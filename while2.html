@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TotalEdad</title>
+</head>
+<body>
+    <script>
+        function saltarLinea(){
+            document.write("<br>");
+            document.write("<br>");
+        }
+        function write(frase){
+            document.write(frase);
+        }
+
+        var numMos=parseInt(prompt("Ingrese números de miembros "));
+            con= 1;
+            talE= 0;
+
+        while(con <= numMos){
+
+            edad= parseInt(prompt("ingrese edad"));
+            talE= talE + edad;
+            con++;
+        
+        }
+        
+        med= edad/numMos;
+        write("la media de las edades es "+ med);
+    </script>
+</body>
+</html>
