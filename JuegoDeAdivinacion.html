@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adivinaNúmero</title>
+</head>
+<body>
+    <script>
+        function saltarLinea(){
+            document.write("<br>");
+            document.write("<br>");
+        }
+        function write(frase){
+            document.write(frase);
+        }
+
+    var numPen= Math.round(Math.random()*10);
+        
+        numUsu=parseInt(prompt("Ingrese numero del 1 al 10"));
+
+        if (numUsu == numPen){
+            write("Usted acerto");
+        }
+        else{
+            write("Usted no ha adivinado");
+        }
+    </script>
+</body>
+</html>
