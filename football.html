@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football</title>
+</head>
+<body>
+    <script>
+         function saltarLinea(){
+            document.write("<br>");
+            document.write("<br>");
+        }
+        function write(frase){
+            document.write(frase);
+            
+        }
+
+
+        var conWin= parseInt( prompt("Ingrese número de victorias"));
+            conEmp= parseInt( prompt("ingrese número de empates"));
+
+            res= ((conWin*3)+ conEmp);
+
+            write("Los puntos obtenidos fueron " + res );
+            saltarLinea()
+
+            // condiconal if + ( intruciion que debe cumplir)+ {bloque} 
+
+          //  if (res >= 14){
+              //  write("El equito tuvo mejor desempeño este año");
+         //   }else{              
+         //       write("El equipo tuvo el menor desempeño este año");
+         //   }
+
+            if (res > 14){
+                write("El equito tuvo mejor desempeño este año");
+            }
+            if (res < 14){
+                write("El equito tuvo menor desempeño este año");
+            }
+            if (res == 14){
+                write("El equito tuvo igual desempeño este año");
+            }
+
+    </script>
+</body>
+</html>
