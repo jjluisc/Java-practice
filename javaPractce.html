@@ -10,7 +10,6 @@
     <script>
         function saltarLinea(){
             document.write("<br>");
-            document.write("<br>");
         }
         function write(frase){
             document.write(frase);
@@ -23,12 +22,12 @@
         } 
 
         var nombre= prompt("Ingrese su nombre")
-            ingPeso = prompt(nombre +" Informe su peso") ;
-            ingAlt = prompt(nombre +" informe su Altura");
+            ingPeso =parseInt( prompt(nombre +" Informe su peso")) ;
+            ingAlt =parseInt(prompt(nombre +" informe su Altura"));
             prom = calImc(ingPeso,ingAlt);
 
         write(nombre +", su IMC es " + prom);
-        saltarLinea()
+        saltarLinea();
 
         if(prom < 18.5){
             write("Insuficiencia ponderal");

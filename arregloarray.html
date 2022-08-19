@@ -4,27 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Arreglo Array</title>
 </head>
 <body>
-
-<input />
+    <input />
 <button>Verificar número</button>
-
     <script>
+        function aleatorio(){
+            return Math.round(Math.random()*10);
+        }
 
-    var numVer=[3,4,5,6];
+        function solNum(cantidad){
+            var sec=[];
+                cont=1;
+        
+        while (cont<= cantidad){
+            numAle=aleatorio();
+            sec.push=numAle;
+            cont++
+        }
+        return sec
+        }
+
+        numVer=solNum(4);
         inp= document.querySelector("input");
         inp.focus();
+        console.log(numVer)
 
 
     function verificar(){
         var enc= false;
-        for(var posc=0;posc<4;posc++){
+        for(var posc=0;posc<numVer.length;posc++){
             if (parseInt(inp.value)== numVer[posc]){
             enc=true;
             alert("usted acerto");
             inp.value="";
+
         }
 
     }
@@ -34,13 +49,11 @@
         }
     }
 
-        inp.focus();
     
     var but= document.querySelector("button");
     but.onclick = verificar;
     but.focus();
 
     </script>
-    
 </body>
 </html>
