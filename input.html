@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input />
+<button>verificar</button>
+
+<script>
+var numero = [4,6,9,1] 
+    inp = document.querySelector("input");
+
+
+
+    function verificar(){
+        enc = false;
+        for(var pos= 0;pos<numero.length;pos++){
+        if((parseInt(inp.value) == numero[pos] )){
+        enc = true;
+         alert("usted acerto!!!");
+
+        }
+    }
+    if(enc == false){
+        alert("usted erro");
+    }
+        inp.value = "";
+        inp.focus();
+    }
+
+    butt = document.querySelector("button");
+    butt.onclick=verificar;
+    butt.focus();
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
