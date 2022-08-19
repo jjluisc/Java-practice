@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input />
+<button>Verificar número</button>
+
+    <script>
+    function aleatorio(){
+            return Math.round(Math.random()*10)
+    }
+
+    function sortearNumeros(cantidad){
+        var secretos = [];
+        var contador = 1;
+
+        while(contador<=cantidad){
+        numeroAleatorio = aleatorio();
+       secretos.push(numeroAleatorio);
+        contador++;    
+    }
+     
+    return  secretos
+    console.log(secretos)
+    }
+     
+   var numVer = sortearNumeros(4);
+
+
+
+            inp= document.querySelector("input");
+            inp.focus();
+    
+    
+        function verificar(){
+            var enc= false;
+            for(var posc=0;posc<4;posc++){
+                if (parseInt(inp.value)== numVer[posc]){
+                enc=true;
+                alert("usted acerto");
+                inp.value="";
+            }
+    
+        }
+        if(enc==false) {        
+            alert("usted erro");
+            inp.value="";
+            }
+        }
+    
+            inp.focus();
+        
+        var but= document.querySelector("button");
+        but.onclick = verificar;
+        but.focus();
+    </script>
+</body>
+</html>
